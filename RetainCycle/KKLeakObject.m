@@ -58,6 +58,20 @@ typedef void(^KKBlock)();
     NSLog(@"Retain count after block is %ld", CFGetRetainCount((__bridge CFTypeRef)(self)));
 }
 
+- (void)testLeakWithCocoa
+{
+    NSLog(@"Retain count before block is %ld", CFGetRetainCount((__bridge CFTypeRef)(self)));
+
+    NSOperationQueue *queue = [NSOperationQueue new];
+    NSBlockOperation *operation = [NSBlockOperation blockOperationWithBlock:^{
+        if(operation.isCancelled)
+        {
+            NSLog(@"canceled");
+        }
+    }];
+    [queue addOperation:operation];
+    NSLog(@"Retain count after block is %ld", CFGetRetainCount((__bridge CFTypeRef)(self)));
+}
 
 
 @end

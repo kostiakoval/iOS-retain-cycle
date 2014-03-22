@@ -9,6 +9,7 @@
 #import "KKViewController.h"
 #import "KKObject.h"
 #import "KKLeakObject.h"
+#import "KKDangerous.h"
 
 @interface KKViewController ()
 
@@ -23,6 +24,8 @@
     [self testLocalObject];
     [self testCocoaBlocks];
     [self testSelfCopyBlocks];
+    
+    [self testDangerousLeaks];
 }
 
 - (void)didReceiveMemoryWarning
@@ -109,5 +112,59 @@
     [object testWeakSelfInBlock];
     NSLog(@"Retain count after testWeakSelfInBlock is %ld", CFGetRetainCount((__bridge CFTypeRef)(object)));
 }
+
+- (void)testSelfLeakWithCocoa
+{
+    NSLog(@"\n Start Testing testSelfLeakWithCocoa");
+    KKLeakObject *object = [KKLeakObject new];
+    [object testLeakWithCocoa];
+    NSLog(@"Retain count after testLeakWithCocoa is %ld", CFGetRetainCount((__bridge CFTypeRef)(object)));
+}
+
+#pragma mark - Test dangerous Ratian cycles. Dangerous mean wen xcode doesn't show warnings
+
+- (void)testDangerousLeaks
+{
+    [self testNotificationWithSelectors];
+    [self testNotificationMainQueueBlocks];
+    [self testNotificationBackgroundQueueBlocks];
+    [self testOther];
+}
+
+- (void)testNotificationWithSelectors
+{
+    NSLog(@"\n Start Testing testNotificationWithSelectors");
+    KKDangerous *object = [KKDangerous new];
+    [object testNotificationCenterWithSelectors];
+    NSLog(@"Retain count after testNotificationCenterWithSelectors is %ld", CFGetRetainCount((__bridge CFTypeRef)(object)));
+}
+
+- (void)testNotificationMainQueueBlocks
+{
+    NSLog(@"\n Start Testing testNotificationMainQueueBlocks");
+    KKDangerous *object = [KKDangerous new];
+    [object testNotificationCenterWithMainQueue];
+    NSLog(@"Retain count after testNotificationCenterWithMainQueue is %ld", CFGetRetainCount((__bridge CFTypeRef)(object)));
+}
+
+- (void)testNotificationBackgroundQueueBlocks
+{
+    NSLog(@"\n Start Testing testNotificationBacgroundQueueBlocks");
+    KKDangerous *object = [KKDangerous new];
+    [object testNotificationCenterWithBackgroundQueue];
+    NSLog(@"Retain count after testNotificationCenterWithBackgroundQueue is %ld", CFGetRetainCount((__bridge CFTypeRef)(object)));
+}
+
+
+#pragma mark - Other Dangerous test
+
+- (void)testOther
+{
+    NSLog(@"\n Start Testing testOther");
+    KKDangerous *object = [KKDangerous new];
+    [object testStroringBlocks];
+    NSLog(@"Retain count after someOtherTest is %ld", CFGetRetainCount((__bridge CFTypeRef)(object)));
+}
+
 
 @end

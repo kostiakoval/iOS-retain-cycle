@@ -14,4 +14,6 @@
 - (void)testClearSelfInBlock;
 - (void)testWeakSelfInBlock;
 
+- (void)testLeakWithCocoa;
+
 @end
