@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9BE2DCF78C2544BDBD910FA6 /* libPods-RetainCycle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BAD26CDD4448C4965CD500 /* libPods-RetainCycle.a */; };
+		B5A3C6E718D4EA7B00FD95C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A3C6E618D4EA7B00FD95C9 /* Foundation.framework */; };
+		B5A3C6E918D4EA7B00FD95C9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A3C6E818D4EA7B00FD95C9 /* CoreGraphics.framework */; };
+		B5A3C6EB18D4EA7B00FD95C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A3C6EA18D4EA7B00FD95C9 /* UIKit.framework */; };
+		B5A3C6F118D4EA7B00FD95C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5A3C6EF18D4EA7B00FD95C9 /* InfoPlist.strings */; };
+		B5A3C6F318D4EA7B00FD95C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A3C6F218D4EA7B00FD95C9 /* main.m */; };
+		B5A3C6F718D4EA7B00FD95C9 /* KKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A3C6F618D4EA7B00FD95C9 /* KKAppDelegate.m */; };
+		B5A3C6FA18D4EA7B00FD95C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A3C6F818D4EA7B00FD95C9 /* Main.storyboard */; };
+		B5A3C6FD18D4EA7B00FD95C9 /* KKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A3C6FC18D4EA7B00FD95C9 /* KKViewController.m */; };
+		B5A3C6FF18D4EA7B00FD95C9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5A3C6FE18D4EA7B00FD95C9 /* Images.xcassets */; };
+		B5A3C70618D4EA7B00FD95C9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A3C70518D4EA7B00FD95C9 /* XCTest.framework */; };
+		B5A3C70718D4EA7B00FD95C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A3C6E618D4EA7B00FD95C9 /* Foundation.framework */; };
+		B5A3C70818D4EA7B00FD95C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A3C6EA18D4EA7B00FD95C9 /* UIKit.framework */; };
+		B5A3C71018D4EA7B00FD95C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B5A3C70E18D4EA7B00FD95C9 /* InfoPlist.strings */; };
+		B5A3C71218D4EA7B00FD95C9 /* RetainCycleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A3C71118D4EA7B00FD95C9 /* RetainCycleTests.m */; };
+		B5A3C71D18D4EB7700FD95C9 /* KKObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A3C71C18D4EB7700FD95C9 /* KKObject.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5A3C70918D4EA7B00FD95C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5A3C6DB18D4EA7B00FD95C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5A3C6E218D4EA7B00FD95C9;
+			remoteInfo = RetainCycle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B5A3C6E318D4EA7B00FD95C9 /* RetainCycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetainCycle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5A3C6E618D4EA7B00FD95C9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B5A3C6E818D4EA7B00FD95C9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B5A3C6EA18D4EA7B00FD95C9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B5A3C6EE18D4EA7B00FD95C9 /* RetainCycle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RetainCycle-Info.plist"; sourceTree = "<group>"; };
+		B5A3C6F018D4EA7B00FD95C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B5A3C6F218D4EA7B00FD95C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B5A3C6F418D4EA7B00FD95C9 /* RetainCycle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RetainCycle-Prefix.pch"; sourceTree = "<group>"; };
+		B5A3C6F518D4EA7B00FD95C9 /* KKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKAppDelegate.h; sourceTree = "<group>"; };
+		B5A3C6F618D4EA7B00FD95C9 /* KKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKAppDelegate.m; sourceTree = "<group>"; };
+		B5A3C6F918D4EA7B00FD95C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5A3C6FB18D4EA7B00FD95C9 /* KKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKViewController.h; sourceTree = "<group>"; };
+		B5A3C6FC18D4EA7B00FD95C9 /* KKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKViewController.m; sourceTree = "<group>"; };
+		B5A3C6FE18D4EA7B00FD95C9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B5A3C70418D4EA7B00FD95C9 /* RetainCycleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetainCycleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5A3C70518D4EA7B00FD95C9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B5A3C70D18D4EA7B00FD95C9 /* RetainCycleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RetainCycleTests-Info.plist"; sourceTree = "<group>"; };
+		B5A3C70F18D4EA7B00FD95C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B5A3C71118D4EA7B00FD95C9 /* RetainCycleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RetainCycleTests.m; sourceTree = "<group>"; };
+		B5A3C71B18D4EB7600FD95C9 /* KKObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKObject.h; sourceTree = "<group>"; };
+		B5A3C71C18D4EB7700FD95C9 /* KKObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKObject.m; sourceTree = "<group>"; };
+		CFDCC916D8EF4E95BA606FCF /* Pods-RetainCycle.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RetainCycle.xcconfig"; path = "Pods/Pods-RetainCycle.xcconfig"; sourceTree = "<group>"; };
+		D2BAD26CDD4448C4965CD500 /* libPods-RetainCycle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RetainCycle.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5A3C6E018D4EA7B00FD95C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A3C6E918D4EA7B00FD95C9 /* CoreGraphics.framework in Frameworks */,
+				B5A3C6EB18D4EA7B00FD95C9 /* UIKit.framework in Frameworks */,
+				B5A3C6E718D4EA7B00FD95C9 /* Foundation.framework in Frameworks */,
+				9BE2DCF78C2544BDBD910FA6 /* libPods-RetainCycle.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5A3C70118D4EA7B00FD95C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A3C70618D4EA7B00FD95C9 /* XCTest.framework in Frameworks */,
+				B5A3C70818D4EA7B00FD95C9 /* UIKit.framework in Frameworks */,
+				B5A3C70718D4EA7B00FD95C9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5A3C6DA18D4EA7B00FD95C9 = {
+			isa = PBXGroup;
+			children = (
+				B5A3C6EC18D4EA7B00FD95C9 /* RetainCycle */,
+				B5A3C70B18D4EA7B00FD95C9 /* RetainCycleTests */,
+				B5A3C6E518D4EA7B00FD95C9 /* Frameworks */,
+				B5A3C6E418D4EA7B00FD95C9 /* Products */,
+				CFDCC916D8EF4E95BA606FCF /* Pods-RetainCycle.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		B5A3C6E418D4EA7B00FD95C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5A3C6E318D4EA7B00FD95C9 /* RetainCycle.app */,
+				B5A3C70418D4EA7B00FD95C9 /* RetainCycleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5A3C6E518D4EA7B00FD95C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5A3C6E618D4EA7B00FD95C9 /* Foundation.framework */,
+				B5A3C6E818D4EA7B00FD95C9 /* CoreGraphics.framework */,
+				B5A3C6EA18D4EA7B00FD95C9 /* UIKit.framework */,
+				B5A3C70518D4EA7B00FD95C9 /* XCTest.framework */,
+				D2BAD26CDD4448C4965CD500 /* libPods-RetainCycle.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5A3C6EC18D4EA7B00FD95C9 /* RetainCycle */ = {
+			isa = PBXGroup;
+			children = (
+				B5A3C6F518D4EA7B00FD95C9 /* KKAppDelegate.h */,
+				B5A3C6F618D4EA7B00FD95C9 /* KKAppDelegate.m */,
+				B5A3C6F818D4EA7B00FD95C9 /* Main.storyboard */,
+				B5A3C6FB18D4EA7B00FD95C9 /* KKViewController.h */,
+				B5A3C6FC18D4EA7B00FD95C9 /* KKViewController.m */,
+				B5A3C71B18D4EB7600FD95C9 /* KKObject.h */,
+				B5A3C71C18D4EB7700FD95C9 /* KKObject.m */,
+				B5A3C6FE18D4EA7B00FD95C9 /* Images.xcassets */,
+				B5A3C6ED18D4EA7B00FD95C9 /* Supporting Files */,
+			);
+			path = RetainCycle;
+			sourceTree = "<group>";
+		};
+		B5A3C6ED18D4EA7B00FD95C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5A3C6EE18D4EA7B00FD95C9 /* RetainCycle-Info.plist */,
+				B5A3C6EF18D4EA7B00FD95C9 /* InfoPlist.strings */,
+				B5A3C6F218D4EA7B00FD95C9 /* main.m */,
+				B5A3C6F418D4EA7B00FD95C9 /* RetainCycle-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B5A3C70B18D4EA7B00FD95C9 /* RetainCycleTests */ = {
+			isa = PBXGroup;
+			children = (
+				B5A3C71118D4EA7B00FD95C9 /* RetainCycleTests.m */,
+				B5A3C70C18D4EA7B00FD95C9 /* Supporting Files */,
+			);
+			path = RetainCycleTests;
+			sourceTree = "<group>";
+		};
+		B5A3C70C18D4EA7B00FD95C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5A3C70D18D4EA7B00FD95C9 /* RetainCycleTests-Info.plist */,
+				B5A3C70E18D4EA7B00FD95C9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5A3C6E218D4EA7B00FD95C9 /* RetainCycle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5A3C71518D4EA7B00FD95C9 /* Build configuration list for PBXNativeTarget "RetainCycle" */;
+			buildPhases = (
+				8DD46DDF6BBF4746A97D3754 /* Check Pods Manifest.lock */,
+				B5A3C6DF18D4EA7B00FD95C9 /* Sources */,
+				B5A3C6E018D4EA7B00FD95C9 /* Frameworks */,
+				B5A3C6E118D4EA7B00FD95C9 /* Resources */,
+				9BBDE69CC5184161A6996C15 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RetainCycle;
+			productName = RetainCycle;
+			productReference = B5A3C6E318D4EA7B00FD95C9 /* RetainCycle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B5A3C70318D4EA7B00FD95C9 /* RetainCycleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5A3C71818D4EA7B00FD95C9 /* Build configuration list for PBXNativeTarget "RetainCycleTests" */;
+			buildPhases = (
+				B5A3C70018D4EA7B00FD95C9 /* Sources */,
+				B5A3C70118D4EA7B00FD95C9 /* Frameworks */,
+				B5A3C70218D4EA7B00FD95C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5A3C70A18D4EA7B00FD95C9 /* PBXTargetDependency */,
+			);
+			name = RetainCycleTests;
+			productName = RetainCycleTests;
+			productReference = B5A3C70418D4EA7B00FD95C9 /* RetainCycleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5A3C6DB18D4EA7B00FD95C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KK;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Konstantin Koval";
+				TargetAttributes = {
+					B5A3C70318D4EA7B00FD95C9 = {
+						TestTargetID = B5A3C6E218D4EA7B00FD95C9;
+					};
+				};
+			};
+			buildConfigurationList = B5A3C6DE18D4EA7B00FD95C9 /* Build configuration list for PBXProject "RetainCycle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5A3C6DA18D4EA7B00FD95C9;
+			productRefGroup = B5A3C6E418D4EA7B00FD95C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5A3C6E218D4EA7B00FD95C9 /* RetainCycle */,
+				B5A3C70318D4EA7B00FD95C9 /* RetainCycleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5A3C6E118D4EA7B00FD95C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A3C6FF18D4EA7B00FD95C9 /* Images.xcassets in Resources */,
+				B5A3C6F118D4EA7B00FD95C9 /* InfoPlist.strings in Resources */,
+				B5A3C6FA18D4EA7B00FD95C9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5A3C70218D4EA7B00FD95C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A3C71018D4EA7B00FD95C9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8DD46DDF6BBF4746A97D3754 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9BBDE69CC5184161A6996C15 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-RetainCycle-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5A3C6DF18D4EA7B00FD95C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A3C6FD18D4EA7B00FD95C9 /* KKViewController.m in Sources */,
+				B5A3C6F718D4EA7B00FD95C9 /* KKAppDelegate.m in Sources */,
+				B5A3C71D18D4EB7700FD95C9 /* KKObject.m in Sources */,
+				B5A3C6F318D4EA7B00FD95C9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5A3C70018D4EA7B00FD95C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A3C71218D4EA7B00FD95C9 /* RetainCycleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5A3C70A18D4EA7B00FD95C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5A3C6E218D4EA7B00FD95C9 /* RetainCycle */;
+			targetProxy = B5A3C70918D4EA7B00FD95C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B5A3C6EF18D4EA7B00FD95C9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5A3C6F018D4EA7B00FD95C9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B5A3C6F818D4EA7B00FD95C9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5A3C6F918D4EA7B00FD95C9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B5A3C70E18D4EA7B00FD95C9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5A3C70F18D4EA7B00FD95C9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5A3C71318D4EA7B00FD95C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B5A3C71418D4EA7B00FD95C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5A3C71618D4EA7B00FD95C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFDCC916D8EF4E95BA606FCF /* Pods-RetainCycle.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RetainCycle/RetainCycle-Prefix.pch";
+				INFOPLIST_FILE = "RetainCycle/RetainCycle-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B5A3C71718D4EA7B00FD95C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFDCC916D8EF4E95BA606FCF /* Pods-RetainCycle.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RetainCycle/RetainCycle-Prefix.pch";
+				INFOPLIST_FILE = "RetainCycle/RetainCycle-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B5A3C71918D4EA7B00FD95C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RetainCycle.app/RetainCycle";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RetainCycle/RetainCycle-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RetainCycleTests/RetainCycleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B5A3C71A18D4EA7B00FD95C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RetainCycle.app/RetainCycle";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RetainCycle/RetainCycle-Prefix.pch";
+				INFOPLIST_FILE = "RetainCycleTests/RetainCycleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5A3C6DE18D4EA7B00FD95C9 /* Build configuration list for PBXProject "RetainCycle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5A3C71318D4EA7B00FD95C9 /* Debug */,
+				B5A3C71418D4EA7B00FD95C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5A3C71518D4EA7B00FD95C9 /* Build configuration list for PBXNativeTarget "RetainCycle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5A3C71618D4EA7B00FD95C9 /* Debug */,
+				B5A3C71718D4EA7B00FD95C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5A3C71818D4EA7B00FD95C9 /* Build configuration list for PBXNativeTarget "RetainCycleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5A3C71918D4EA7B00FD95C9 /* Debug */,
+				B5A3C71A18D4EA7B00FD95C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5A3C6DB18D4EA7B00FD95C9 /* Project object */;
+}
