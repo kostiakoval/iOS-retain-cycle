@@ -8,6 +8,7 @@
 
 #import "KKViewController.h"
 #import "KKObject.h"
+#import "KKLeakObject.h"
 
 @interface KKViewController ()
 
@@ -21,6 +22,7 @@
 
     [self testLocalObject];
     [self testCocoaBlocks];
+    [self testSelfCopyBlocks];
 }
 
 - (void)didReceiveMemoryWarning
@@ -72,7 +74,40 @@
     NSLog(@"\n Start Testing NSoperation Self in Cocoa block");
     KKObject *object = [KKObject new];
     [object testSelfInCocoaBlocks];
-    NSLog(@"Retain count after testSelfInCocoaBlocks is %ld", CFGetRetainCount((__bridge CFTypeRef)(object)));
+    NSLog(@"Retain count after testSelfInNSOperation is %ld", CFGetRetainCount((__bridge CFTypeRef)(object)));
 
 }
+
+#pragma mark - Test self in Blocks that are assing to copy property
+- (void)testSelfCopyBlocks
+{
+    [self testStrongSelfInBlock];
+    [self testStrongSelfInBlockWithClear];
+    [self testWeakSelfInBlock];
+}
+
+- (void)testStrongSelfInBlock
+{
+    NSLog(@"\n Start Testing testStrongSelfInBlock");
+    KKLeakObject *object = [KKLeakObject new];
+    [object testSelfInBlock];
+    NSLog(@"Retain count after testSelfInBlock is %ld", CFGetRetainCount((__bridge CFTypeRef)(object)));
+}
+
+- (void)testStrongSelfInBlockWithClear
+{
+    NSLog(@"\n Start Testing testStrongSelfInBlockWithClear");
+    KKLeakObject *object = [KKLeakObject new];
+    [object testClearSelfInBlock];
+    NSLog(@"Retain count after testClearSelfInBlock is %ld", CFGetRetainCount((__bridge CFTypeRef)(object)));
+}
+
+- (void)testWeakSelfInBlock
+{
+    NSLog(@"\n Start Testing testWeakSelfInBlock");
+    KKLeakObject *object = [KKLeakObject new];
+    [object testWeakSelfInBlock];
+    NSLog(@"Retain count after testWeakSelfInBlock is %ld", CFGetRetainCount((__bridge CFTypeRef)(object)));
+}
+
 @end

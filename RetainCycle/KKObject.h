@@ -17,4 +17,7 @@
 
 - (void)testSelfInNSOperation;
 
+
+// Help methods for testing
+- (void)doSomethingWithCat:(NSString *)aCat;
 @end

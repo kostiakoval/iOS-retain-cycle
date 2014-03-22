@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9BE2DCF78C2544BDBD910FA6 /* libPods-RetainCycle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BAD26CDD4448C4965CD500 /* libPods-RetainCycle.a */; };
+		B5924CF018DDAF010032198A /* KKLeakObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B5924CEF18DDAF010032198A /* KKLeakObject.m */; };
 		B5A3C6E718D4EA7B00FD95C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A3C6E618D4EA7B00FD95C9 /* Foundation.framework */; };
 		B5A3C6E918D4EA7B00FD95C9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A3C6E818D4EA7B00FD95C9 /* CoreGraphics.framework */; };
 		B5A3C6EB18D4EA7B00FD95C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A3C6EA18D4EA7B00FD95C9 /* UIKit.framework */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B5924CEE18DDAF010032198A /* KKLeakObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKLeakObject.h; sourceTree = "<group>"; };
+		B5924CEF18DDAF010032198A /* KKLeakObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KKLeakObject.m; sourceTree = "<group>"; };
 		B5A3C6E318D4EA7B00FD95C9 /* RetainCycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetainCycle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A3C6E618D4EA7B00FD95C9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B5A3C6E818D4EA7B00FD95C9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -86,6 +89,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B5924CF118DDAF060032198A /* Test Objects */ = {
+			isa = PBXGroup;
+			children = (
+				B5A3C71B18D4EB7600FD95C9 /* KKObject.h */,
+				B5A3C71C18D4EB7700FD95C9 /* KKObject.m */,
+				B5924CEE18DDAF010032198A /* KKLeakObject.h */,
+				B5924CEF18DDAF010032198A /* KKLeakObject.m */,
+			);
+			name = "Test Objects";
+			sourceTree = "<group>";
+		};
 		B5A3C6DA18D4EA7B00FD95C9 = {
 			isa = PBXGroup;
 			children = (
@@ -126,8 +140,7 @@
 				B5A3C6F818D4EA7B00FD95C9 /* Main.storyboard */,
 				B5A3C6FB18D4EA7B00FD95C9 /* KKViewController.h */,
 				B5A3C6FC18D4EA7B00FD95C9 /* KKViewController.m */,
-				B5A3C71B18D4EB7600FD95C9 /* KKObject.h */,
-				B5A3C71C18D4EB7700FD95C9 /* KKObject.m */,
+				B5924CF118DDAF060032198A /* Test Objects */,
 				B5A3C6FE18D4EA7B00FD95C9 /* Images.xcassets */,
 				B5A3C6ED18D4EA7B00FD95C9 /* Supporting Files */,
 			);
@@ -296,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5924CF018DDAF010032198A /* KKLeakObject.m in Sources */,
 				B5A3C6FD18D4EA7B00FD95C9 /* KKViewController.m in Sources */,
 				B5A3C6F718D4EA7B00FD95C9 /* KKAppDelegate.m in Sources */,
 				B5A3C71D18D4EB7700FD95C9 /* KKObject.m in Sources */,
